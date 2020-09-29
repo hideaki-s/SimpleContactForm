@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="description" content="___DESCRIPTION___" />
+  <meta name="keywords" content="___KEYWORD___" />
+  <meta name="google-site-verification" content="___GOOGLE_SITE_VERIFICATION___" />
+  <meta property="og:type" content="blog" />
+  <meta property="og:title" content="___TITLE___" />
+  <meta property="og:description" content="___DESCRIPTION___" />
+  <meta property="og:url" content="___URL___" />
+  <meta property="og:site_name" content="___SITE_NAME___" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta property="og:image" content="___IMAGE___" />
+  <title>___TITLE___</title>
+  <meta name="referrer" content="always">
+  <meta name="referrer" content="unsafe-url">
+  <link media="all" rel="stylesheet" href="css/reset.css" />
+  <link media="all" rel="stylesheet" href="css/style.css" />
+</head>
+<body class="index">
+<header class="header">
+</header>
+<div id="main_wrapper">
+  <div id="main" class="clearfix">
+    <div class="contents">
+      <h2 class="">お問い合わせ</h2>
+      <p class="">下記のフォームに必要事項をご入力のうえ、「ご記入内容の確認」ボタンをクリックしてください。<br>
+        メールにて順次回答させていただきます。</p>
+      <p class="mB1em">
+        注1）<span class="required">「※」</span>印のついた項目は、必ずご入力ください。<br>
+        注2）フォーム入力項目で特殊文字・記号などの機種依存文字は、文字化けになりますので、機種に依存しない文字をご利用ください。</p>
+
+      <p>機種依存文字一部例<br />
+        ・会社名など括弧囲み文字 → &#12849;、&#12850;、&#12857;<br />
+        ・単位記号 → &#13213;、&#13199;、&#13218;<br />
+        ・大文字、小文字のローマ数字 → &#8544;、&#8545;、&#8546;、&#8560;、&#8561;、&#8562;<br />
+        ・丸囲み文字 → &#9312;、&#9398;、&#169;</p>
+      <div id="errormsg" class="" style="display:###errorDisplay###;">
+        <h3 class="large warning">入力した内容について、以下の箇所をご確認ください。</h3>
+        <ul class="messages">
+          ###errormsg###
+        </ul>
+      </div>
+
+      <form id="mail_form" method="post" action="./index.php">
+        <h3 class="">何についてのお問い合わせですか？　（複数選択可能）<span class="required">※</span></h3>
+        <div class="contact_box_1">
+          <div class="category_list_wrapper">
+            <ul>###category_list###</ul>
+          </div>
+        </div>
+        <h3 class="">ご用件をお聞かせください　（複数選択可能）<span class="required">※</span></h3>
+        <div class="contact_box_1">
+          <div class="subject_list_wrapper">
+            <ul>###subject_list###</ul>
+          </div>
+        </div>
+        <h3 class="">お問い合わせ内容をご記入ください</h3>
+        <div>
+          <textarea name="honbun" id="honbun">###honbun###</textarea>
+        </div>
+        <h3 class="">お客様の情報をご記入ください</h3>
+        <div class="contact_box_2">
+          <table class="form_table">
+            <tr>
+              <th><label for="customerName">お名前<span class="required">※</span></label></th>
+              <td><input type="text" name="customerName" id="customerName" maxlength="255" value="###customerName###"></td>
+            </tr>
+            <tr>
+              <th><label for="customerKana">お名前カナ</label></th>
+              <td><input type="text" name="customerKana" id="customerKana" maxlength="255" value="###customerKana###"></td>
+            </tr>
+            <tr>
+              <th><label for="customerEmail">E-mail アドレス<span class="required">※</span></label></th>
+              <td><input type="text" name="customerEmail" id="customerEmail" value="###customerEmail###"></td>
+            </tr>
+            <tr>
+              <th><label for="tel">電話番号</label></th>
+              <td class="tel">
+                <input type="text" name="tel" id="tel" maxlength="11" value="###tel###">
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="">
+          <label>
+            <input type="checkbox" name="optin" value="同意する" ###optin###>
+            「当サイトの個人情報保護方針」にご同意の上、チェックを入れてください。
+          </label>
+        </div>
+
+        <div class="">
+          <p class="mT10">&raquo; <a href="./policy.html" target="_blank">当サイトの個人情報保護方針</a>
+        </div>
+
+        <div class="">
+          <input type="submit" name="mode" value="ご記入内容の確認">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<footer></footer>
+</body>
+</html>

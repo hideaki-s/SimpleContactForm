@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="description" content="___DESCRIPTION___" />
+  <meta name="keywords" content="___KEYWORD___" />
+  <meta name="google-site-verification" content="___GOOGLE_SITE_VERIFICATION___" />
+  <meta property="og:type" content="blog" />
+  <meta property="og:title" content="___TITLE___" />
+  <meta property="og:description" content="___DESCRIPTION___" />
+  <meta property="og:url" content="___URL___" />
+  <meta property="og:site_name" content="___SITE_NAME___" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta property="og:image" content="___IMAGE___" />
+  <title>___TITLE___</title>
+  <meta name="referrer" content="always">
+  <meta name="referrer" content="unsafe-url">
+</head>
+<body class="index">
+<header class="header">
+</header>
+<div id="main_wrapper">
+  <div id="main" class="clearfix">
+    <div class="contents">
+      <h2 class="hd05">お問い合わせ - ご記入内容の確認</h2>
+
+      <p class="mB1em">以下の内容で送信いたします。よろしければ「送信」を押してください。<br>
+      訂正する場合は「戻る」を押してください。</p>
+
+      <form id="mail_form" method="post" action="./index.php">
+      <h3 class="large black mT2em mB05em">何についてのお問い合わせですか？</h3>
+      <div class="contact_box_1">
+        ###category_val###
+      </div>
+
+      <h3 class="large black mT2em mB05em">ご用件をお聞かせください</h3>
+      <div class="contact_box_1">
+        ###subject_val###
+      </div>
+
+      <h3 class="large black mT2em mB05em">お問い合わせ内容をご記入ください</h3>
+      <div class="box_white">
+        ###honbun_br###
+        <input type="hidden" name="honbun" value="###honbun###">
+      </div>
+
+      <h3 class="large black mT2em mB05em">お客様の情報をご記入ください</h3>
+      <div class="contact_box_2">
+        <table class="form_table">
+          <tr>
+            <th class="w200">お名前</th>
+            <td>###customerName###<input type="hidden" name="customerName" value="###customerName###"></td>
+          </tr>
+          <tr>
+            <th>お名前カナ</th>
+            <td>###customerKana###<input type="hidden" name="customerKana" value="###customerKana###"></td>
+          </tr>
+          <tr>
+            <th>E-mail アドレス</th>
+            <td>###customerEmail###<input type="hidden" name="customerEmail" value="###customerEmail###"></td>
+          </tr>
+          <tr>
+            <th>電話番号</th>
+            <td>
+              ###tel###
+              <input type="hidden" name="tel" value="###tel###">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="aligncenter mV3em">
+        <input type="hidden" name="optin" value="1">
+        <input type="submit" name="mode" class="send" value="送信">　
+        <input type="submit" name="mode" class="back" value="戻る">
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+<footer></footer>
+</body>
